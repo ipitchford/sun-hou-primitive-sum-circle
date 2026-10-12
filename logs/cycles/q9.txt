@@ -1,0 +1,2 @@
+q=9 CYCLE 2 4 5 3 1 7 8 0 6
+q=9 p=3 f=2 FOUND

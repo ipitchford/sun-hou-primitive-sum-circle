@@ -1,0 +1,2 @@
+q=8 CYCLE 3 0 2 5 6 1 4 7
+q=8 p=2 f=3 FOUND

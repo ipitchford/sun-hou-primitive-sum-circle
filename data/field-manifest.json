@@ -1,0 +1,656 @@
+[
+  {
+    "q": 8,
+    "p": 2,
+    "f": 3,
+    "modulusLowToHigh": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q8.txt",
+    "sha256": "a9384f9241211b411290a4e3e57682639ab480ce6629edf9612fbb627ac27202"
+  },
+  {
+    "q": 9,
+    "p": 3,
+    "f": 2,
+    "modulusLowToHigh": [
+      2,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q9.txt",
+    "sha256": "7ae8f4917d37682b166b8ea34010b692a1801ecfa4574a0894f97d0979c086e0"
+  },
+  {
+    "q": 11,
+    "p": 11,
+    "f": 1,
+    "modulusLowToHigh": [
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q11.txt",
+    "sha256": "c89d72380c6d1dc923edc9228b08dd7a3704c917cca6adf6c1e75f704fb4deea"
+  },
+  {
+    "q": 13,
+    "p": 13,
+    "f": 1,
+    "modulusLowToHigh": [
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q13.txt",
+    "sha256": "9c2d70d03bc702876baf025e5a4c5953732e2eb2c9369b4b81c439be27ea83b9"
+  },
+  {
+    "q": 16,
+    "p": 2,
+    "f": 4,
+    "modulusLowToHigh": [
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q16.txt",
+    "sha256": "5b2b8cb185baca8adefaad59b4ec1ff06c4e47325aaffc4d176b38b2270db9b4"
+  },
+  {
+    "q": 17,
+    "p": 17,
+    "f": 1,
+    "modulusLowToHigh": [
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q17.txt",
+    "sha256": "aa2ac542d535b729cc5b35fa2f45ebac7d780ab9655a06bc39a3fee9df864bc8"
+  },
+  {
+    "q": 19,
+    "p": 19,
+    "f": 1,
+    "modulusLowToHigh": [
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q19.txt",
+    "sha256": "adf418b02b458a95b6ff558c1efd90752ce7725b3596bae6d164aa825dfc4e34"
+  },
+  {
+    "q": 23,
+    "p": 23,
+    "f": 1,
+    "modulusLowToHigh": [
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q23.txt",
+    "sha256": "35decb7ebfba0feb70fa55c4d270e17565393ca2e08aedcd6cd7c0693c2c47d2"
+  },
+  {
+    "q": 25,
+    "p": 5,
+    "f": 2,
+    "modulusLowToHigh": [
+      2,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q25.txt",
+    "sha256": "ffe4efdb81d29ea58475adbddcab6ff1a3c6f208713d438230244284fe04095b"
+  },
+  {
+    "q": 27,
+    "p": 3,
+    "f": 3,
+    "modulusLowToHigh": [
+      1,
+      2,
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q27.txt",
+    "sha256": "e84a1f635a73391c6bc743fc35f7d7bc4005b94c1a3f2cbc5d3d0161c67c4b2f"
+  },
+  {
+    "q": 29,
+    "p": 29,
+    "f": 1,
+    "modulusLowToHigh": [
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q29.txt",
+    "sha256": "009ce6b4383af1e264e64644c7d3754f09f7abe16a1ea0b5b623773d68c050ce"
+  },
+  {
+    "q": 31,
+    "p": 31,
+    "f": 1,
+    "modulusLowToHigh": [
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q31.txt",
+    "sha256": "179f1e19311c788c5a4c7895dcfb333cebcb93cbdea97f602675ed78455e1523"
+  },
+  {
+    "q": 37,
+    "p": 37,
+    "f": 1,
+    "modulusLowToHigh": [
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q37.txt",
+    "sha256": "3d03ec6d3a2269384c1228772ecd36a1fa8a5fa35ec63d28cc2a3659b5aa71f3"
+  },
+  {
+    "q": 41,
+    "p": 41,
+    "f": 1,
+    "modulusLowToHigh": [
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q41.txt",
+    "sha256": "38913a8884762cff5bf5c9d89bce60a5fe9566b4e76c6cc3a003c490afa049f4"
+  },
+  {
+    "q": 43,
+    "p": 43,
+    "f": 1,
+    "modulusLowToHigh": [
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q43.txt",
+    "sha256": "659e892d357363c06d7fa241ffd3abb64e4dd7b291870bde118e9cd078d8e542"
+  },
+  {
+    "q": 47,
+    "p": 47,
+    "f": 1,
+    "modulusLowToHigh": [
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q47.txt",
+    "sha256": "5d6c26ef70ddfb500f1869dcf4e3bedaf1c787d1f588b9b232cb80bae2665546"
+  },
+  {
+    "q": 49,
+    "p": 7,
+    "f": 2,
+    "modulusLowToHigh": [
+      3,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q49.txt",
+    "sha256": "293acf9c17f201096a89584e404250665c5187d30084d7d237e0d5521bc5d427"
+  },
+  {
+    "q": 53,
+    "p": 53,
+    "f": 1,
+    "modulusLowToHigh": [
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q53.txt",
+    "sha256": "e881b658e59c36b0f72b2390f0c3cdf5887f4982770f8ac382d0f7e951c42dc0"
+  },
+  {
+    "q": 59,
+    "p": 59,
+    "f": 1,
+    "modulusLowToHigh": [
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q59.txt",
+    "sha256": "a731813a901973b052b9e81fdd3da9cafc4ec77da562db3e1a5f365b12a6d41b"
+  },
+  {
+    "q": 61,
+    "p": 61,
+    "f": 1,
+    "modulusLowToHigh": [
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q61.txt",
+    "sha256": "d7e55c6af028da3059660c5003d048fffd64d77c7dd98ca344eb4e34fa3d4954"
+  },
+  {
+    "q": 64,
+    "p": 2,
+    "f": 6,
+    "modulusLowToHigh": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q64.txt",
+    "sha256": "2d7bc4327492a33875bc9a1b4b91d02f181a78328bd84306952b576c45b74b8b"
+  },
+  {
+    "q": 81,
+    "p": 3,
+    "f": 4,
+    "modulusLowToHigh": [
+      2,
+      1,
+      0,
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q81.txt",
+    "sha256": "992bc2349e425d45fe0f6d70223354d4770b1c409a17be97306ebefab00e820c"
+  },
+  {
+    "q": 121,
+    "p": 11,
+    "f": 2,
+    "modulusLowToHigh": [
+      7,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q121.txt",
+    "sha256": "7e236f13f2a442dee5cb97bf1c56be8d6209694863e86a6b8ad3a208ce27c144"
+  },
+  {
+    "q": 125,
+    "p": 5,
+    "f": 3,
+    "modulusLowToHigh": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q125.txt",
+    "sha256": "98fac35ab7ad4666029d368df273c65c9aedf8bfbd402b6b4d5a6eb9d7b7f06c"
+  },
+  {
+    "q": 169,
+    "p": 13,
+    "f": 2,
+    "modulusLowToHigh": [
+      2,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q169.txt",
+    "sha256": "78da47c4ee4cecc84463a4145f7ddbe5c38f70780ccad261803f19b4eb3e80e6"
+  },
+  {
+    "q": 243,
+    "p": 3,
+    "f": 5,
+    "modulusLowToHigh": [
+      1,
+      2,
+      0,
+      0,
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q243.txt",
+    "sha256": "e02d7a495b926d35461de618287b54992cd0b3340cae210f3146083e3513f3b2"
+  },
+  {
+    "q": 256,
+    "p": 2,
+    "f": 8,
+    "modulusLowToHigh": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q256.txt",
+    "sha256": "0447e923c02b7a6da579e1175a20bf9bee3c7856918aae3dda5c0398c24c5efa"
+  },
+  {
+    "q": 289,
+    "p": 17,
+    "f": 2,
+    "modulusLowToHigh": [
+      3,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q289.txt",
+    "sha256": "456d9c2aa4dc596d84ef7b4d955155342778632a455a2ebe46fe05607a6538ae"
+  },
+  {
+    "q": 343,
+    "p": 7,
+    "f": 3,
+    "modulusLowToHigh": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q343.txt",
+    "sha256": "8cb79322f3ffb2cdc120d9190e288d306cdbef7633c3f7e5b8031b87183913be"
+  },
+  {
+    "q": 361,
+    "p": 19,
+    "f": 2,
+    "modulusLowToHigh": [
+      2,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q361.txt",
+    "sha256": "b122068d6fe9ea73f8e7a4a0fe9278bba3117d5658702930ed059beaa6005659"
+  },
+  {
+    "q": 529,
+    "p": 23,
+    "f": 2,
+    "modulusLowToHigh": [
+      7,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q529.txt",
+    "sha256": "1f6d38a84a5792b47ee2edf2ad4281e08c33ade98a979e8558b37669c3d037fa"
+  },
+  {
+    "q": 625,
+    "p": 5,
+    "f": 4,
+    "modulusLowToHigh": [
+      2,
+      2,
+      1,
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q625.txt",
+    "sha256": "cce62ae74d11f66e77f5cd6eb2f004022a821997339d2bc50964295e821848e9"
+  },
+  {
+    "q": 729,
+    "p": 3,
+    "f": 6,
+    "modulusLowToHigh": [
+      2,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q729.txt",
+    "sha256": "ec9121c71a107c68bb81ed252652351b03881c4d7eeded6a39d3baf748a62be1"
+  },
+  {
+    "q": 841,
+    "p": 29,
+    "f": 2,
+    "modulusLowToHigh": [
+      3,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q841.txt",
+    "sha256": "3aa311ab4b0af634782cd14b9c9d88f05127f6807172b9dec9b86ae85d46071e"
+  },
+  {
+    "q": 961,
+    "p": 31,
+    "f": 2,
+    "modulusLowToHigh": [
+      12,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q961.txt",
+    "sha256": "0c5a13316363a95c8cc5d87d325f443987478b681c5334e233961066a478df1c"
+  },
+  {
+    "q": 1331,
+    "p": 11,
+    "f": 3,
+    "modulusLowToHigh": [
+      4,
+      1,
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q1331.txt",
+    "sha256": "1dbc5b15597deb17569162f8c9267ab067f77a36dc3838e99435d504e302d16a"
+  },
+  {
+    "q": 1369,
+    "p": 37,
+    "f": 2,
+    "modulusLowToHigh": [
+      5,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q1369.txt",
+    "sha256": "1dbb39d20ced4a1ca66cf839a52878197ee78fff14de2e5fa399dc8043b6e6f4"
+  },
+  {
+    "q": 1681,
+    "p": 41,
+    "f": 2,
+    "modulusLowToHigh": [
+      12,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q1681.txt",
+    "sha256": "98fc6010411488cbe01ad200bdf4e2f75bd941b949a23006678fd4c5cb8780e3"
+  },
+  {
+    "q": 1849,
+    "p": 43,
+    "f": 2,
+    "modulusLowToHigh": [
+      3,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q1849.txt",
+    "sha256": "7cc56555f90cb557a88b4ff0cc95d6ad59ceaeb6661750d72c4dd96d184150d8"
+  },
+  {
+    "q": 2401,
+    "p": 7,
+    "f": 4,
+    "modulusLowToHigh": [
+      5,
+      3,
+      1,
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q2401.txt",
+    "sha256": "1032080c1e14fda32a1a0b998baecf1b015c1159a6915852bd17155ef5b93f2c"
+  },
+  {
+    "q": 3481,
+    "p": 59,
+    "f": 2,
+    "modulusLowToHigh": [
+      2,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q3481.txt",
+    "sha256": "764a67f10c1586c3fd9996b10e6b2d67979547daa119ce782ea95f87aba2a1a9"
+  },
+  {
+    "q": 3721,
+    "p": 61,
+    "f": 2,
+    "modulusLowToHigh": [
+      2,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q3721.txt",
+    "sha256": "2a5799b9aad08621b81fd42c63abf47413a127cf78d38e9e88eae4b8bffbb4c5"
+  },
+  {
+    "q": 4489,
+    "p": 67,
+    "f": 2,
+    "modulusLowToHigh": [
+      12,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q4489.txt",
+    "sha256": "f078b0239a85adfa6f42a1381c6acc099e857589a83fb8f54e8e2e0a44abe6eb"
+  },
+  {
+    "q": 5041,
+    "p": 71,
+    "f": 2,
+    "modulusLowToHigh": [
+      11,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q5041.txt",
+    "sha256": "9bc0fe944bf0fc27cdb1cdfd8d2392a793d17ed41c5904d9ecb39935c06a7571"
+  },
+  {
+    "q": 6241,
+    "p": 79,
+    "f": 2,
+    "modulusLowToHigh": [
+      3,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q6241.txt",
+    "sha256": "cb4aa61503b8776e070ffadf907dd61c8312b11bd8cea1ebee256f6a0ffe1972"
+  },
+  {
+    "q": 6889,
+    "p": 83,
+    "f": 2,
+    "modulusLowToHigh": [
+      2,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q6889.txt",
+    "sha256": "e3bda6f9e4dc75c4865796cae13944b264b75fe9dd0ec28afca49e1cbcf35591"
+  },
+  {
+    "q": 7921,
+    "p": 89,
+    "f": 2,
+    "modulusLowToHigh": [
+      6,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q7921.txt",
+    "sha256": "626a9adbfa774534848c7b08747d9a62922d89ab7201d2fe5e325f3c3540d755"
+  },
+  {
+    "q": 10201,
+    "p": 101,
+    "f": 2,
+    "modulusLowToHigh": [
+      3,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q10201.txt",
+    "sha256": "a8984fe116bec917b0f1192f2113e4fd9d7670998acc8cc28c0ae558a5d2d20d"
+  },
+  {
+    "q": 11881,
+    "p": 109,
+    "f": 2,
+    "modulusLowToHigh": [
+      6,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q11881.txt",
+    "sha256": "8c49130d1c0ac120d8588318e8883a373304ef3beaad1893049dd7a8ba853246"
+  },
+  {
+    "q": 17161,
+    "p": 131,
+    "f": 2,
+    "modulusLowToHigh": [
+      14,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q17161.txt",
+    "sha256": "5ce54ae3c9738170ad47c55330ad46cf236c708eba6cc587eac52e44e3adea79"
+  },
+  {
+    "q": 19321,
+    "p": 139,
+    "f": 2,
+    "modulusLowToHigh": [
+      2,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q19321.txt",
+    "sha256": "63d46e2e00ab20ba73b7ba656aa38cc91d52c14775cee24dd3b11e3de26baff8"
+  },
+  {
+    "q": 28561,
+    "p": 13,
+    "f": 4,
+    "modulusLowToHigh": [
+      2,
+      1,
+      1,
+      0,
+      1
+    ],
+    "cycle": "logs/cycles/q28561.txt",
+    "sha256": "a0ed44ecd65f164c68d9e3b58b1211136389decbcf0c3e06704790ff91a6cada"
+  },
+  {
+    "q": 32761,
+    "p": 181,
+    "f": 2,
+    "modulusLowToHigh": [
+      18,
+      1,
+      1
+    ],
+    "cycle": "logs/cycles/q32761.txt",
+    "sha256": "3f53c8ccbddb4f1d085db5684f8f6d6d8ca4cc82f1e5daa39486813f405ddebd"
+  }
+]

@@ -1,0 +1,8 @@
+Recorded local publication replay, 12 October 2026
+Python 3.13.5, Clang 17.0.0 Python build
+SymPy 1.14.0
+macOS 27.0.1 arm64
+Apple clang 21.0.0 (clang-2100.3.34.2)
+pdfTeX 1.40.29
+Code needs Python, SymPy and a C compiler; no credential or network needed for replay.
+Linux CI is a separate execution, not an independent external reproduction.

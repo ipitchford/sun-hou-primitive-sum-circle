@@ -1,0 +1,184 @@
+\documentclass[11pt]{amsart}
+\usepackage{amssymb,amsmath,hyperref}
+\hypersetup{hidelinks}
+\emergencystretch=1em
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newcommand{\F}{\mathbb{F}}
+\title[Primitive adjacent sums]{A proof of the Sun--Hou conjecture on circular orderings of finite fields with primitive adjacent sums}
+\author{Anonymous}
+\date{12 October 2026}
+\thanks{Version 1.1.0-candidate. Unrefereed computer-assisted proof candidate.
+DOI: \href{https://doi.org/10.5281/zenodo.23307587}{10.5281/zenodo.23307587}.}
+\begin{document}
+\begin{abstract}
+Sun and Hou conjectured in 2013 that for every finite field $\F_q$ with $q>7$ the elements of $\F_q$ can be arranged in a circle so that the sum of any two neighbours is a primitive element. Equivalently, the primitive-sum graph $H_q$ is Hamiltonian. She recently proved this for $q>18\,888\,871$ and for prime fields with $p>61$. We complete the proof for all $q>7$. A sieved Chv\'atal--Erd\H{o}s criterion settles all but $53$ of the remaining $728$ fields. For these, Hamilton cycles were found by computer and checked by an independent verifier.
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+Let $H_q$ be the graph on $\F_q$ in which distinct $x,y$ are adjacent when $x+y$ is a primitive element of $\F_q$.
+The conjecture is dated 5 September 2013; its locator in arXiv v9 is
+\cite[Conjecture 3.5(i)]{Sun}.
+\begin{conjecture}[Sun and Hou]
+For every finite field $\F_q$ with $q>7$ there is a numbering $a_1,\dots,a_q$ of the elements of $\F_q$ such that $a_1+a_2,\dots,a_{q-1}+a_q,a_q+a_1$ are all primitive. That is, $H_q$ is Hamiltonian.
+\end{conjecture}
+She \cite[Theorem 1.2(1) and Remark]{She} proved that $H_q$ is Hamiltonian for every prime power $q>18\,888\,871$, and for every prime $p>61$ by a direct construction. That construction uses the theorem of Cohen, Oliveira e Silva and Trudgian on three consecutive primitive elements \cite{COT}. Luo and She \cite{LS} record the conjecture as confirmed for $q>18\,888\,871$.
+
+\begin{theorem}\label{thm:main}
+For every prime power $q>7$ the graph $H_q$ is Hamiltonian. Hence the Sun--Hou conjecture holds.
+\end{theorem}
+
+\section{A sieved criterion}
+Write $\alpha(G)$ for the independence number and $\kappa(G)$ for the vertex
+connectivity. All multiplicative characters, including the principal character,
+are extended by zero at zero. The pair-count estimate below controls both
+independent sets and small separated components. Applying it directly to
+$I\times I$, including the diagonal, improves the disjoint-partition estimate.
+Let $n=q-1$, $\theta(m)=\varphi(m)/m$, $W(m)=2^{\omega(m)}$. For $m\mid n$, a nonzero $z$ is \emph{$m$-free} if $z=y^d$ with $d\mid m$ forces $d=1$; primitive means $n$-free. For $X,Y\subseteq\F_q$ let $E_m(X,Y)$ count the ordered pairs $(x,y)\in X\times Y$ (with $x=y$ allowed) for which $x+y$ is $m$-free, and write $E=E_n$.
+
+\begin{lemma}\label{lem:char}
+For a nonprincipal multiplicative character $\chi$ (with $\chi(0)=0$) and $X,Y\subseteq\F_q$, $\bigl|\sum_{x\in X,y\in Y}\chi(x+y)\bigr|\le\sqrt{q|X||Y|}$.
+\end{lemma}
+\begin{proof}
+By Cauchy--Schwarz the square of the sum is at most
+\[
+\begin{aligned}
+|X|\sum_{x\in\F_q}\Bigl|\sum_{y\in Y}\chi(x+y)\Bigr|^2
+&=|X|\sum_{y_1,y_2\in Y}\sum_x
+\chi(x+y_1)\overline{\chi(x+y_2)}.
+\end{aligned}
+\]
+The inner sum is $q-1$ if $y_1=y_2$ and $-1$ otherwise, since
+$\sum_{t\ne1}\chi(t)=-1$. Hence the bound is
+$|X|(q|Y|-|Y|^2)\le q|X||Y|$.
+\end{proof}
+
+\begin{lemma}\label{lem:sieve}
+Let $e\mid n$ be squarefree, let $p_1,\dots,p_s$ be the primes dividing $n$ but not $e$, and suppose $\delta=1-\sum 1/p_i>0$. Put $\Delta=(s-1)/\delta+2$ if $s\ge1$ and $\Delta=1$ if $s=0$. Then $E(X,Y)\ge\theta(e)\delta\bigl(|X||Y|-W(e)\Delta\sqrt{q|X||Y|}\bigr)$.
+\end{lemma}
+\begin{proof}
+We adapt the cancellation and prime-sieving mechanism of \cite[Lemmas 4--5]{COT}
+to the sum condition. The character-expansion and connectivity strategy is
+related to \cite{She,LS}; the shifted-product graph of \cite{LS} is different.
+For squarefree $m\mid n$ and $z\ne0$,
+\[
+\mathbf1_{m\text{-free}}(z)=\theta(m)\sum_{d\mid m}
+\frac{\mu(d)}{\varphi(d)}\sum_{\operatorname{ord}\chi=d}\chi(z).
+\]
+Put $P=|X||Y|$ and $L=\sqrt{qP}$. The principal term is
+$\theta(m)(P-T_0)$, where $T_0=\#\{x+y=0\}\le\sqrt P$.
+Lemma~\ref{lem:char} bounds each nonprincipal character sum by $L$;
+thus $E_e\ge\theta(e)(P-W(e)L)$.
+If $s=0$, then $e=\operatorname{rad}(n)$, $e$-free means primitive,
+and $\delta=\Delta=1$, proving the assertion directly.
+For $s\ge1$, the pointwise sieve inequality gives
+\[
+E\ge\sum_i(E_{ep_i}-\theta(p_i)E_e)+\delta E_e.
+\]
+Indeed an $e$-free element failing $k$ omitted prime conditions contributes
+$1-k$ on the right, no more than its primitive indicator.
+Each bracket cancels the principal term and all orders dividing $e$;
+its absolute value is at most $\theta(e)\theta(p_i)W(e)L$.
+Finally $\delta+\sum_i\theta(p_i)=s-1+2\delta=\delta\Delta$.
+\end{proof}
+
+\begin{theorem}\label{thm:crit}
+If for some $e$ as in Lemma~\ref{lem:sieve}, with $M=W(e)\Delta\sqrt q$ and $c=1/(\theta(e)\delta)$, we have $\varphi(n)-M\ge M+c$, then $H_q$ is Hamiltonian.
+\end{theorem}
+\begin{proof}
+As $y$ runs over $\F_q$, $x+y$ runs over $\F_q$, so $\deg x\ge\varphi(n)-1$; the loss is the loop $2x$. If $I$ is a nonempty independent set, then $E(I,I)\le|I|$, so Lemma~\ref{lem:sieve} gives $|I|\le M+c$. If $S$ is a minimum vertex cut (possibly empty), $A$ a smallest component of $H_q-S$ and $B$ the rest, then $E(A,B)=0$ and $|A|\le|B|$ give $|A|\le\sqrt{|A||B|}\le M$. Every vertex of $A$ then has at least $\varphi(n)-1-(|A|-1)$ neighbours in $S$, so $\kappa\ge\varphi(n)-M\ge M+c\ge\alpha$. The Chv\'atal--Erd\H{o}s theorem \cite{CE} completes the proof.
+\end{proof}
+
+\begin{corollary}[Vertex-deletion robustness]\label{cor:deletion}
+Let $t\ge0$ be an integer with $q-t\ge3$. If, for an admissible $e$,
+$\varphi(q-1)\ge2M+c+t$, then deleting any at most $t$ vertices of $H_q$
+leaves a Hamiltonian graph.
+\end{corollary}
+\begin{proof}
+Delete $d\le t$ vertices and call the remaining graph $G$. Its minimum
+degree is at least $\varphi(q-1)-1-d$, and the preceding pair-count argument
+still gives $\alpha(G)\le M+c$. If $G$ is complete the result is immediate.
+Otherwise apply the same argument to a minimum cut of $G$: its smallest
+component has size at most $M$, so
+$\kappa(G)\ge\varphi(q-1)-d-M\ge M+c$. Apply \cite{CE}.
+\end{proof}
+This is a direct consequence of the criterion, not a separate optimal
+fault-tolerance result. For example $q=32$, $e=1$ gives $\delta=30/31$,
+$\Delta=2$, $M=2\sqrt{32}$ and $c=31/30$, permitting $t=6$.
+
+\section{Proof of Theorem~\ref{thm:main}}
+By \cite{She} it remains to treat the $728$ prime powers $8\le q\le18\,888\,871$ that are proper prime powers or primes $p\le61$. An exact computation over all choices of $e$ (products of subsets of the primes dividing $n$) shows that Theorem~\ref{thm:crit} applies to all but $53$ of them. The largest exception is $q=32\,761=181^2$. Two independently written programs agree on this list: one uses exact rationals, the other integers only with a different enumeration. For each of the $53$ fields a Hamilton cycle of $H_q$ was found by a randomized rotation--extension search. Each cycle was checked by an independent verifier. The verifier checks $q=p^f$, certifies the field modulus by the order of $X$, checks the permutation property, and tests every adjacent sum for primitivity by $z^{(q-1)/r}\ne1$, using its own polynomial arithmetic.\qed
+
+For clarity about the finite-field certificate, for $f>1$ the verifier works
+in $R=\mathbb F_p[X]/(h)$, where the recorded polynomial $h$ is monic of
+degree $f$. This ring has exactly $p^f=q$ elements even before irreducibility
+is known. The tests $X^{q-1}=1$ and $X^{(q-1)/r}\ne1$ for each prime
+$r\mid q-1$ establish that $X$ has order $q-1$. Its powers therefore exhaust
+the $q-1$ nonzero elements of $R$, all of which are units. Thus $R$ is a field
+and $h$ is irreducible. Prime fields use ordinary arithmetic modulo the
+independently checked prime $p$ instead.
+
+These are not $53$ previously unknown individual cases: Sun already records
+checks for primes below $545$ and an explicit $\mathbb F_9$ ordering
+\cite[Remark 3.5(a)]{Sun}. The contribution is a complete, auditable closure
+of the finite remainder, conditional only on the cited mathematical theorems,
+not a claim of novelty for every certificate.
+
+\section{A classical construction in characteristic two}
+The primitive normal basis theorem (see \cite[Theorem 1.2]{CH}) supplies a
+primitive element $a\in\mathbb F_{2^f}$ whose conjugates
+$a,a^2,\ldots,a^{2^{f-1}}$ form an $\mathbb F_2$-basis. Each conjugate is
+primitive, since $2$ is coprime to $2^f-1$. A cyclic binary Gray ordering of
+the $2^f$ coefficient vectors, for $f\ge2$, changes one coordinate at each
+step, including the closing step. Hence consecutive field elements sum to
+one of these primitive basis vectors. Such an ordering follows inductively
+by listing $0G$ followed by $1G$ in reverse order; the joining and closing
+edges change only the new coordinate. The base case is
+$00,01,11,10$. This gives a non-search construction for every even $q>7$.
+It is a classical simplification, not an additional novelty claim. The
+original $53$ certificates are retained so that the finite closure remains
+independently inspectable without this alternative construction.
+
+\appendix
+\section{Computations}
+\texttt{criterion.py} and \texttt{criterion\_route2.py} produce the residual list.
+The latter uses integer inequalities with denominators cleared; the former
+uses rational arithmetic. \texttt{hamsum.c} is the search and
+\texttt{verifysum.c} a separately implemented verifier, not an external
+reproduction or a formal proof assistant. The non-destructive
+\texttt{replay.sh} checks the frozen cycles against the explicit field
+moduli and hashes in \texttt{data/field-manifest.json}; optional
+\texttt{--regenerate} runs the search in a temporary directory and compares
+its output bytes. Five negative controls must be rejected. Criterion
+witnesses are stored separately, with exact rational slack after a
+nonnegative-side check before squaring.
+
+\begin{center}
+\begin{tabular}{lrrr}
+Criterion & Covered & Residual & Largest residual\\\hline
+She &638&90&2\,042\,041\\
+Unsieved improvement &662&66&326\,041\\
+Sieved improvement &675&53&32\,761
+\end{tabular}
+\end{center}
+The common scope comprises $14$ primes, $592$ squares and $122$ higher
+proper powers. The sieved criterion covers respectively $0$, $567$ and
+$108$ of these. As a small inspectable example, in $\mathbb F_{11}$ the
+cycle $(4,9,10,8,0,2,6,7,1,5,3)$ has cyclic sums
+$(2,8,7,8,2,8,2,8,6,8,7)$, all primitive modulo $11$.
+
+\begin{thebibliography}{9}
+\bibitem{CE} V.~Chv\'atal and P.~Erd\H{o}s, A note on Hamiltonian circuits, \emph{Discrete Math.} 2 (1972), 111--113.
+DOI: \href{https://doi.org/10.1016/0012-365X(72)90079-9}{10.1016/0012-365X(72)90079-9}.
+\bibitem{CH} S.~D. Cohen and S.~Huczynska, The strong primitive normal basis theorem,
+\emph{Acta Arith.} 143 (2010), 299--332. DOI: \href{https://doi.org/10.4064/aa143-4-1}{10.4064/aa143-4-1}.
+\bibitem{COT} S.~D. Cohen, T.~Oliveira e Silva and T.~Trudgian, On consecutive primitive elements in a finite field, \emph{Bull. Lond. Math. Soc.} 47 (2015), 418--426.
+arXiv:1410.6210; DOI: \href{https://doi.org/10.1112/blms/bdv018}{10.1112/blms/bdv018}.
+\bibitem{LS} X.-Q. Luo and Y.-F. She, A conjecture on circular permutations over finite fields, arXiv:2610.06289v1, 2026.
+\bibitem{She} Y.-F. She, Hamiltonicity in graphs defined by primes and primitive elements, arXiv:2609.19114v1, 2026.
+\bibitem{Sun} Z.-W. Sun, Some new problems in additive combinatorics, \emph{Nanjing Univ. J. Math. Biquarterly} 36 (2019), 134--155; arXiv:1309.1679v9.
+\end{thebibliography}
+\end{document}

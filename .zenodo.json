@@ -1,0 +1,14 @@
+{
+  "title": "A proof of the Sun–Hou conjecture on circular orderings of finite fields with primitive adjacent sums",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "Unrefereed computer-assisted proof candidate. Inherits the known large-field and prime-field results, then closes the 728-field remainder using an exact sieved criterion for 675 orders and explicit verified Hamilton cycles for 53. Includes frozen certificates, explicit field moduli, exact criterion witnesses and a non-destructive replay route. Original cases are not all new; novelty is bounded by the finite closure. No formal verification, external peer review or independent external reproduction is claimed.",
+  "creators": [{"name": "Anonymous"}],
+  "version": "1.1.0-candidate",
+  "publication_date": "2026-10-12",
+  "access_right": "open",
+  "license": "cc-zero",
+  "keywords": ["finite fields", "Hamiltonian cycles", "primitive elements", "Sun-Hou conjecture", "computer-assisted proof"],
+  "related_identifiers": [{"identifier": "https://github.com/ipitchford/sun-hou-primitive-sum-circle", "relation": "isSupplementTo", "scheme": "url"}],
+  "references": ["Sun, Z.-W. Some new problems in additive combinatorics. arXiv:1309.1679v9, Conjecture 3.5(i).", "She, Y.-F. Hamiltonicity in graphs defined by primes and primitive elements. arXiv:2609.19114v1.", "Cohen, Oliveira e Silva and Trudgian. On consecutive primitive elements in a finite field. doi:10.1112/blms/bdv018."]
+}

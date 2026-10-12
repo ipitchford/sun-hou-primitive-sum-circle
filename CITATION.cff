@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this unrefereed candidate with its version and assurance boundary."
+title: "A proof of the Sun–Hou conjecture on circular orderings of finite fields with primitive adjacent sums"
+authors:
+  - name: Anonymous
+version: 1.1.0-candidate
+date-released: 2026-10-12
+doi: 10.5281/zenodo.23307587
+license: CC0-1.0
+repository-code: https://github.com/ipitchford/sun-hou-primitive-sum-circle

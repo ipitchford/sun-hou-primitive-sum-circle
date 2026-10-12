@@ -1,0 +1,23 @@
+{
+  "scope": 728,
+  "covered": [
+    638,
+    662,
+    675
+  ],
+  "residual": [
+    90,
+    66,
+    53
+  ],
+  "largestResidual": [
+    2042041,
+    326041,
+    32761
+  ],
+  "order": [
+    "She",
+    "unsieved",
+    "sieved"
+  ]
+}
